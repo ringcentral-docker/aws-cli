@@ -2,10 +2,16 @@ FROM amazon/aws-cli:2.8.7
 LABEL maintainer="john.lin@ringcentral.com"
 
 #==============
-# Install java
+# Install git
 #==============
 RUN yum update -y \
-    && yum install git java-11-openjdk-devel -y
+    && yum install git
+
+#==============
+# Install java
+#==============
+
+RUN amazon-linux-extras install java-openjdk11
 
 #==============
 # Show java version
