@@ -17,5 +17,3 @@ RUN amazon-linux-extras install java-openjdk11
 # Show java version
 #==============
 RUN java -version
-
-ENTRYPOINT ["/usr/local/bin/aws"]
