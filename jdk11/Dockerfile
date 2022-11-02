@@ -5,7 +5,7 @@ LABEL maintainer="john.lin@ringcentral.com"
 # Install git
 #==============
 RUN yum update -y \
-    && yum install git
+    && yum install git -y
 
 #==============
 # Install java
