@@ -4,8 +4,8 @@ LABEL maintainer="john.lin@ringcentral.com"
 #==============
 # Install java
 #==============
-RUN apk update \
-    && apk add git openjdk11
+RUN yum update \
+    && yum install git java-11-openjdk-devel
 
 #==============
 # Show java version
