@@ -3,7 +3,7 @@ name: Build AWS-CLI with JDK 11
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       # '*' matches any character except '/'
       - 'jdk11/*'
